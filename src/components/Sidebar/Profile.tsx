@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { LogOut } from 'lucide-react'
 import { Button } from '../Button'
 
@@ -10,10 +11,10 @@ export function Profile() {
         alt=""
       />
       <div className="flex  flex-col truncate">
-        <span className="truncate text-sm font-semibold text-zinc-700">
+        <span className="truncate text-sm font-semibold  text-zinc-700 dark:text-zinc-100">
           João Dias
         </span>
-        <span className="truncate text-sm text-zinc-500">
+        <span className="truncate text-sm text-zinc-500 dark:text-zinc-400">
           joao@devjoaodias.com.br
         </span>
       </div>
