@@ -1,3 +1,4 @@
+import { AlterTheme } from '@/components/AlterTheme'
 import { Button } from '@/components/Button'
 import * as FileInput from '@/components/Form/FileInput'
 import { Select } from '@/components/Form/Select'
@@ -9,9 +10,12 @@ import { Bold, Italic, Link, List, ListOrdered, Mail } from 'lucide-react'
 export default function Home() {
   return (
     <>
-      <h1 className="text-3xl font-medium text-zinc-900 dark:text-zinc-100">
-        Settings
-      </h1>
+      <div className="flex w-full items-center justify-between">
+        <h1 className="text-3xl font-medium text-zinc-900 dark:text-zinc-100">
+          Settings
+        </h1>
+        <AlterTheme />
+      </div>
       <SettingsTabs />
 
       <div className="mt-6 flex flex-col">
